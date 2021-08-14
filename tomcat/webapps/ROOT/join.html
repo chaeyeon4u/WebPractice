@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<!--
+	Visualize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Chaeyeon's Bakery</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="assets/css/reset.css"/>
+        <link rel="stylesheet" href="assets/css/login.css"/>
+        <link rel="stylesheet" href="fontello-9bbb8792/css/fontello.css">
+		<link rel="stylesheet" href="assets/css/main2.css"/>
+        
+        <script defer src="assets/js/common.js"></script>
+	</head>
+	<body>
+		
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<span class="avatar"><a href="index.html" title="Home"><img src="images/at_cafe.jpg" width="170" height="170" alt="" /></a></span>
+						<h1 class="introduce">Welcome to <strong>Chaeyeon's Bakery</strong> site <br />
+						</h1>
+						<ul class="icons">
+                            <li title="Home"><a href="index.html" class="icon-home"><span class="label">Home</span></a></li>
+							<li title="Join"><a href="join.html" class="icon-check"><span class="label">Join</span></a></li>
+							<li title="Login"><a href="login.html" class="icon-login"><span class="label">Login</span></a></li>
+							<li title="Notice Board" onclick="Login_Notice()"><a href="#" class="icon-pencil"><span class="label">Notice Board</span></a></li>
+						</ul>
+					</header>
+                
+                <!-- Login Part -->
+                <div id="login">
+                    <h1><strong>JOIN US</strong></h1>
+                    
+                    <form method="post" action="joinAction.jsp">
+                        <div class="idPassword">
+                            <label>
+                                <input placeholder="ID" type="text" name="userID" maxlength="20">
+                            </label>
+                            <label>
+                                <input placeholder="Password" type="password" name="userPassword" maxlength="20">
+                            </label>
+                            <label>
+                                <input placeholder="Name" type="text" name="userName" maxlength="7">
+                            </label>
+                            <div class="GenderBtn">
+                                    <label class="GenderBtnSelect"><input type="radio" name="userGender" value="B"><span> 남자 </span></label>
+                                    <label class="GenderBtnSelect"><input type="radio" name="userGender" value="G"><span> 여자 </span></label>
+                            </div>
+                            <label>
+                                <input placeholder="E-mail" type="email" name="userEmail" maxlength="20">
+                            </label>
+                        </div>
+                        <div class="loginButton">
+                            <input class="btn-primary" type="submit" value="join us">
+                        </div>
+                    </form>
+                    
+                </div>
+
+                <!-- Footer -->
+                <footer>
+                <b>
+                    <font color="white">TEL) 042-***_**** <br>위치: 천안시 서북구 두정동 ****</font>
+                </b>
+                <details>
+                    <summary>
+                        <font color="white">Copyright</font>
+                    </summary>
+                    <p>
+                        <font color="white">이 홈페이지의 저작권은 유채연에게 있음</font>
+                    </p>
+                </details>
+               </footer>
+
+			</div>
+
+	</body>
+</html>

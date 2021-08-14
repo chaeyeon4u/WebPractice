@@ -1,0 +1,299 @@
+08-Jun-2021 11:54:31.587 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Jun-2021 11:54:31.587 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 11:54:31.638 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service cy990426
+08-Jun-2021 11:54:31.644 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+08-Jun-2021 11:54:31.644 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+08-Jun-2021 11:54:31.647 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [host-manager] appears to have started a thread named [SeedGenerator Thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ sun.security.provider.SeedGenerator$ThreadedSeedGenerator.run(SeedGenerator.java:334)
+ java.lang.Thread.run(Thread.java:745)
+08-Jun-2021 11:54:31.650 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 11:54:31.651 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 11:54:53.820 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+08-Jun-2021 11:54:53.864 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 11:54:53.873 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Jun-2021 11:54:53.874 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 213 ms
+08-Jun-2021 11:54:53.883 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service cy990426
+08-Jun-2021 11:54:53.883 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+08-Jun-2021 11:54:53.888 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/host-manager
+08-Jun-2021 11:54:54.176 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 11:54:59.188 경고 [cy990426.cafe24.com-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [5,001] milliseconds.
+08-Jun-2021 11:54:59.200 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/host-manager has finished in 5,312 ms
+08-Jun-2021 11:54:59.201 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/manager
+08-Jun-2021 11:54:59.324 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 11:54:59.326 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/manager has finished in 125 ms
+08-Jun-2021 11:54:59.326 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/ROOT
+08-Jun-2021 11:54:59.528 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 11:54:59.559 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/ROOT has finished in 233 ms
+08-Jun-2021 11:54:59.569 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 11:54:59.580 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 5706 ms
+08-Jun-2021 12:07:11.886 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Jun-2021 12:07:11.887 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:07:11.938 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service cy990426
+08-Jun-2021 12:07:11.944 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+08-Jun-2021 12:07:11.945 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+08-Jun-2021 12:07:11.948 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [host-manager] appears to have started a thread named [SeedGenerator Thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ sun.security.provider.SeedGenerator$ThreadedSeedGenerator.run(SeedGenerator.java:334)
+ java.lang.Thread.run(Thread.java:745)
+08-Jun-2021 12:07:11.951 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:07:11.952 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:07:32.235 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+08-Jun-2021 12:07:32.278 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:07:32.286 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Jun-2021 12:07:32.287 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 205 ms
+08-Jun-2021 12:07:32.296 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service cy990426
+08-Jun-2021 12:07:32.296 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+08-Jun-2021 12:07:32.301 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/host-manager
+08-Jun-2021 12:07:32.567 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 12:07:37.578 경고 [cy990426.cafe24.com-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [5,001] milliseconds.
+08-Jun-2021 12:07:37.588 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/host-manager has finished in 5,287 ms
+08-Jun-2021 12:07:37.588 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/manager
+08-Jun-2021 12:07:37.711 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 12:07:37.712 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/manager has finished in 124 ms
+08-Jun-2021 12:07:37.712 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/ROOT
+08-Jun-2021 12:07:37.910 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 12:07:37.942 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/ROOT has finished in 229 ms
+08-Jun-2021 12:07:37.943 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:07:37.951 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 5663 ms
+08-Jun-2021 12:13:14.017 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Jun-2021 12:13:14.017 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:13:14.069 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service cy990426
+08-Jun-2021 12:13:14.075 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+08-Jun-2021 12:13:14.075 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+08-Jun-2021 12:13:14.080 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [host-manager] appears to have started a thread named [SeedGenerator Thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ sun.security.provider.SeedGenerator$ThreadedSeedGenerator.run(SeedGenerator.java:334)
+ java.lang.Thread.run(Thread.java:745)
+08-Jun-2021 12:13:14.084 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:13:14.085 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:13:28.087 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+08-Jun-2021 12:13:28.130 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:13:28.138 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Jun-2021 12:13:28.139 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 203 ms
+08-Jun-2021 12:13:28.148 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service cy990426
+08-Jun-2021 12:13:28.149 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+08-Jun-2021 12:13:28.154 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/host-manager
+08-Jun-2021 12:13:28.422 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 12:13:33.433 경고 [cy990426.cafe24.com-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [5,001] milliseconds.
+08-Jun-2021 12:13:33.443 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/host-manager has finished in 5,289 ms
+08-Jun-2021 12:13:33.443 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/manager
+08-Jun-2021 12:13:33.566 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 12:13:33.566 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/manager has finished in 123 ms
+08-Jun-2021 12:13:33.567 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/ROOT
+08-Jun-2021 12:13:33.765 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 12:13:33.794 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/ROOT has finished in 227 ms
+08-Jun-2021 12:13:33.797 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:13:33.800 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 5660 ms
+08-Jun-2021 12:46:50.852 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Jun-2021 12:46:50.852 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:46:50.903 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service cy990426
+08-Jun-2021 12:46:50.908 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+08-Jun-2021 12:46:50.908 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+08-Jun-2021 12:46:50.911 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [host-manager] appears to have started a thread named [SeedGenerator Thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ sun.security.provider.SeedGenerator$ThreadedSeedGenerator.run(SeedGenerator.java:334)
+ java.lang.Thread.run(Thread.java:745)
+08-Jun-2021 12:46:50.915 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:46:50.917 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:47:16.503 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+08-Jun-2021 12:47:16.546 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:47:16.554 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Jun-2021 12:47:16.555 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 206 ms
+08-Jun-2021 12:47:16.564 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service cy990426
+08-Jun-2021 12:47:16.565 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+08-Jun-2021 12:47:16.569 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/host-manager
+08-Jun-2021 12:47:16.836 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 12:47:21.847 경고 [cy990426.cafe24.com-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [5,002] milliseconds.
+08-Jun-2021 12:47:21.857 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/host-manager has finished in 5,288 ms
+08-Jun-2021 12:47:21.857 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/manager
+08-Jun-2021 12:47:21.980 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 12:47:21.981 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/manager has finished in 124 ms
+08-Jun-2021 12:47:21.981 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/ROOT
+08-Jun-2021 12:47:22.178 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 12:47:22.209 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/ROOT has finished in 228 ms
+08-Jun-2021 12:47:22.213 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 12:47:22.216 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 5660 ms
+08-Jun-2021 13:07:03.750 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Jun-2021 13:07:03.750 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 13:07:03.801 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service cy990426
+08-Jun-2021 13:07:03.807 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+08-Jun-2021 13:07:03.807 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+08-Jun-2021 13:07:03.811 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [host-manager] appears to have started a thread named [SeedGenerator Thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ sun.security.provider.SeedGenerator$ThreadedSeedGenerator.run(SeedGenerator.java:334)
+ java.lang.Thread.run(Thread.java:745)
+08-Jun-2021 13:07:03.815 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 13:07:03.816 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 13:07:11.750 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+08-Jun-2021 13:07:11.794 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 13:07:11.802 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Jun-2021 13:07:11.803 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 215 ms
+08-Jun-2021 13:07:11.813 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service cy990426
+08-Jun-2021 13:07:11.813 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+08-Jun-2021 13:07:11.818 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/host-manager
+08-Jun-2021 13:07:12.086 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 13:07:17.097 경고 [cy990426.cafe24.com-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [5,001] milliseconds.
+08-Jun-2021 13:07:17.108 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/host-manager has finished in 5,290 ms
+08-Jun-2021 13:07:17.108 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/manager
+08-Jun-2021 13:07:17.246 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 13:07:17.247 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/manager has finished in 139 ms
+08-Jun-2021 13:07:17.247 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/ROOT
+08-Jun-2021 13:07:17.454 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 13:07:17.484 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/ROOT has finished in 237 ms
+08-Jun-2021 13:07:17.485 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 13:07:17.507 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 5703 ms
+08-Jun-2021 13:10:36.739 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Jun-2021 13:10:36.739 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 13:10:36.790 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service cy990426
+08-Jun-2021 13:10:36.797 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+08-Jun-2021 13:10:36.797 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+08-Jun-2021 13:10:36.801 경고 [cy990426.cafe24.com-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [host-manager] appears to have started a thread named [SeedGenerator Thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ sun.security.provider.SeedGenerator$ThreadedSeedGenerator.run(SeedGenerator.java:334)
+ java.lang.Thread.run(Thread.java:745)
+08-Jun-2021 13:10:36.804 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 13:10:36.805 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 13:10:39.120 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+08-Jun-2021 13:10:39.165 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 13:10:39.173 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Jun-2021 13:10:39.174 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 212 ms
+08-Jun-2021 13:10:39.183 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service cy990426
+08-Jun-2021 13:10:39.183 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+08-Jun-2021 13:10:39.188 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/host-manager
+08-Jun-2021 13:10:39.465 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 13:10:44.477 경고 [cy990426.cafe24.com-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [5,002] milliseconds.
+08-Jun-2021 13:10:44.487 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/host-manager has finished in 5,299 ms
+08-Jun-2021 13:10:44.487 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/manager
+08-Jun-2021 13:10:44.626 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 13:10:44.627 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/manager has finished in 140 ms
+08-Jun-2021 13:10:44.627 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/ROOT
+08-Jun-2021 13:10:44.843 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Jun-2021 13:10:44.874 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/ROOT has finished in 247 ms
+08-Jun-2021 13:10:44.883 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8353"]
+08-Jun-2021 13:10:44.896 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 5721 ms
+08-Jun-2021 13:11:05.017 심각 [http-nio-8353-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /loginAction.jsp at line 43
+
+40: 		int result = UserDAO.login(user.getUserID(), user.getUserPassword());
+41: 		if(result == 1){//로그인에 성공했을 경우
+42: 			//세션을 연결해준다.
+43: 			session.setAttribute("userID", user.getUserID());
+44: 			PrintWriter script = response.getWriter();
+45: 			script.println("<script>");
+46: 			script.println("location.href = 'LoginOk_index.html'");
+
+
+Stacktrace:] with root cause
+ java.lang.IllegalStateException: setAttribute: Session [EA3569D53DBB5521D3DA08C71B5F3987] has already been invalidated
+	at org.apache.catalina.session.StandardSession.setAttribute(StandardSession.java:1463)
+	at org.apache.catalina.session.StandardSession.setAttribute(StandardSession.java:1428)
+	at org.apache.catalina.session.StandardSessionFacade.setAttribute(StandardSessionFacade.java:137)
+	at org.apache.jsp.loginAction_jsp._jspService(loginAction_jsp.java:165)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-Jun-2021 13:22:27.144 심각 [http-nio-8353-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /deleteAction.jsp at line 47
+
+44: 		}
+45: 		//bbsID가 유효한 경우
+46: 		Bbs bbs = new BbsDAO().getBbs(bbsID);
+47: 		if(!userID.equals(bbs.getUserID())){
+48: 			PrintWriter script = response.getWriter();
+49: 			script.println("<script>");
+50: 			script.println("alert('권한이 없습니다.')");
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.deleteAction_jsp._jspService(deleteAction_jsp.java:162)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+

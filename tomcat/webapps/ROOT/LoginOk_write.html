@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Chaeyeon's Bakery</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="assets/css/reset.css"/>
+        <link rel="stylesheet" href="fontello-9bbb8792/css/fontello.css">
+		<link rel="stylesheet" href="assets/css/main2.css"/>
+        
+        <script defer src="assets/js/common.js"></script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<span class="avatar"><a href="LoginOk_index.html" title="Home"><img src="images/at_cafe.jpg" width="170" height="170" alt="" /></a></span>
+						<h1>Welcome to <strong>Chaeyeon's Bakery</strong> site <br />
+						</h1>
+						<ul class="icons">
+                            <li title="Home"><a href="LoginOk_index.html" class="icon-home"><span class="label">Home</span></a></li>
+							<li title="Join" onclick="Already_Login()"><a href="#" class="icon-check"><span class="label">Join</span></a></li>
+							<li title="Logout" onclick="Logout()"><a href="logoutAction.jsp" class="icon-login"><span class="label" >Login</span></a></li>
+							<li title="Notice Board"><a href="LoginOk_board.jsp" class="icon-pencil"><span class="label">Notice Board</span></a></li>
+						</ul>
+					</header>
+
+				<!--write Part start-->
+                <div id="noticeBoard">
+                    <form method="post" action="writeAction.jsp">
+                        <table id="boardTable">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">글 작성하기</th>
+                                </tr>
+                            </thead>
+                            <tbody class="writeTbody">
+                                <tr>
+                                    <td><input class="bbsTitle" type="text" placeholder="글 제목" name="bbsTitle" maxlength="50"></td>
+                                </tr>
+                                <tr>
+                                    <td><textarea placeholder="글 내용" name="bbsContent" maxlength="2048"></textarea></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+	                    <div id="writeButton">
+	                        <input class="btn-primary" type="submit" href="write.html" value="글쓰기"/>
+	                    </div>
+                    </form>
+                </div>
+                <!--write Part end-->
+
+                <!-- Footer -->
+                <footer>
+                <b>
+                    <font color="white">TEL) 042-***_**** <br>위치: 천안시 서북구 두정동 ****</font>
+                </b>
+                <details>
+                    <summary>
+                        <font color="white">Copyright</font>
+                    </summary>
+                    <p>
+                        <font color="white">이 홈페이지의 저작권은 유채연에게 있음</font>
+                    </p>
+                </details>
+               </footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<!--<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/main.js"></script>-->
+
+	</body>
+</html>

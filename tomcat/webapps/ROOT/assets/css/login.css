@@ -1,0 +1,76 @@
+#login{
+    text-align: center;
+    display: block;
+    background-color: rgba(180, 120, 171,0.5);
+    padding : 30px 0;
+    margin: 2rem auto;
+    align-items: center;
+}
+#login h1{
+    margin: 1rem auto;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: bold;
+    color: rgb(255,255,255);
+    padding: 10px 0;
+}
+#login p{
+    font-size: 15px;
+    color: rgb(255,255,255);
+    padding: 10px 0;
+}
+#login .idPassword{
+    padding: 30px 0; 
+}
+#login .idPassword label{
+    display: block;
+    padding: 6px 0;
+}
+#login .idPassword label input{
+    font-size: 15px;
+    width: 400px;
+    height: 30px;
+    align-items: center;
+}
+#login .loginButton{
+    align-items: center;
+    padding: 30px 0;
+}
+#login .btn-primary{
+    font-size: 15px;
+    color: rgb(255,255,255);
+    background-color: rgba(150, 75, 138, 0.5);
+    border: solid rgb(150, 75, 138);
+    width: 100px;
+    height: 40px;
+}
+#login .find{
+    padding: 5px 0;
+}
+#login .find ul li{
+    display: inline;
+    color: rgb(255,255,255);
+}
+.GenderBtn .GenderBtnSelect{
+    display: inline;
+}
+.GenderBtn input[type=radio]{
+    display: none;
+}
+.GenderBtn input[type=radio]+span{
+    display: inline-block;
+    cursor: pointer;
+    height: 24px;
+    width: 90px;
+    border: 1px solid rgb(150, 75, 138);
+    line-height: 24px;
+    font-weight:bold;
+    font-size:13px;
+    background-color: rgba(150, 75, 138, 0.5);
+    color: rgb(255,255,255);
+}
+.GenderBtn input[type="radio"]:checked + span{
+  border:1px solid rgba(255,255,255,50);
+  background: rgba(255,255,255,50);
+  color: rgb(0,0,0);
+}

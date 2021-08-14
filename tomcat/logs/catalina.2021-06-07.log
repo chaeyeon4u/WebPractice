@@ -1,0 +1,23 @@
+07-Jun-2021 16:51:55.570 정보 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-Jun-2021 16:51:55.570 정보 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8353"]
+07-Jun-2021 16:51:55.621 정보 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service cy990426
+07-Jun-2021 16:51:55.638 정보 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8353"]
+07-Jun-2021 16:51:55.640 정보 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8353"]
+07-Jun-2021 16:52:15.397 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-Jun-2021 16:52:15.455 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8353"]
+07-Jun-2021 16:52:15.469 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Jun-2021 16:52:15.470 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 275 ms
+07-Jun-2021 16:52:15.481 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service cy990426
+07-Jun-2021 16:52:15.481 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+07-Jun-2021 16:52:15.486 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/host-manager
+07-Jun-2021 16:52:15.889 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2021 16:52:20.904 경고 [cy990426.cafe24.com-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [5,004] milliseconds.
+07-Jun-2021 16:52:20.918 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/host-manager has finished in 5,432 ms
+07-Jun-2021 16:52:20.918 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/manager
+07-Jun-2021 16:52:21.092 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2021 16:52:21.093 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/manager has finished in 175 ms
+07-Jun-2021 16:52:21.093 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /cy990426/tomcat/webapps/ROOT
+07-Jun-2021 16:52:21.391 정보 [cy990426.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Jun-2021 16:52:21.440 정보 [cy990426.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /cy990426/tomcat/webapps/ROOT has finished in 347 ms
+07-Jun-2021 16:52:21.443 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8353"]
+07-Jun-2021 16:52:21.483 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 6013 ms
